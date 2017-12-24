@@ -1,0 +1,85 @@
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* グローバルナビゲーション */
+@charset "utf-8";
+
+/* ヘッダー */
+div#header {
+  position: fixed; /* 画面をスクロールしてもヘッダーを常に上部固定 */
+  width: 100%; /* 横幅を画面一杯に設定 */
+  height: 70px; /* ヘッダーの高さを設定 */
+  background: #F7F7F7; /* 背景色の設定 */
+  background-color: rgba( 250, 250, 250, 0.55 );}
+
+div#headerArea {
+  margin: 0; /* 横幅をautoにすることでコンテンツが中央寄りに設定 */
+  width: 980px; /* ヘッダーコンテンツ部分の横幅を設定 */
+}
+
+/* ヘッダーロゴ */
+div#header_logo {
+  float: left; /* ロゴ表示部分を左寄せで設定 */
+  font-style: Impact;
+  padding: 17px 20px 20px 20px;
+  font-weight: bold;
+  font-size: 24px;
+  color: black; /* ロゴの色を設定 */
+}
+
+/* グローバルナビゲーション */
+nav#gnavi {
+  float: right; /* グローバルナビゲーション部分を右寄せで設定 */
+  margin: 12px 0 0 0; /* 上部に12ピクセルの余白を設定 */
+  text-align: right; /* コンテンツの中身を右寄せで設定 */
+}
+
+nav#gnavi ul{
+  clear: both; /* 回り込みを解除する際に使用しdiv要素が重ならないように設定 */
+  list-style:none;
+}
+
+nav#gnavi li {
+  float: right; /* リストを左寄せで横並びになるよう設定 */
+  padding: 0 ; /* 左に20ピクセルの余白を設定 */
+  font-size: 12px;
+
+}
+
+/* リンク */
+a:link {
+  color: black; /* リンクテキストを青色に設定 */
+  text-decoration: none; /* テキストに下線が表示されないように設定 */
+}
+
+a:hover {  /* hoverはマウスを乗せたときの設定 */
+  color: #006DD9; /* リンクテキストを赤色に設定 */
+  text-decoration: none; /* テキストに下線が表示されないように設定 */
+}
+
+ h1{
+   padding: 90px 0 0 50px;
+   font-size: 24px;
+   font-weight: bold; /* 太字 */
+   color: black;
+ }
+ h2{
+   font-size: 22px;
+   font-weight: bold; /* 太字 */
+   padding: 0 0 0 80px;
+   color: black;
+ }
+
+
+ /* メインパネル */
+ div#main_panel {
+   padding: 50px 0 0 0; /* メインパネル上部に46ピクセルの余白を設定 */
+   height: 400px; /* メインパネルの高さを400pxに設定 */
+   background-image: url('../images/Daily-Exercise01.jpg');
+ }
+
+ div#main_panelArea {
+   margin: 0 0 0 60px; /* 横幅をautoにすることでコンテンツが中央寄りになります */
+   padding: 90px 0 0 0; /* メインパネルコンテンツ上部に90ピクセルの余白を設定 */
+   width: 980px; /* 横幅を980ピクセルで設定 */
+ }
