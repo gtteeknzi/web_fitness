@@ -10,17 +10,16 @@ div#header {
   width: 100%; /* 横幅を画面一杯に設定 */
   height: 70px; /* ヘッダーの高さを設定 */
   background: #F7F7F7; /* 背景色の設定 */
-  background-color: rgba( 250, 250, 250, 0.55 );}
+  background-color: rgba( 230, 230, 230, 0.55 );}
 
 div#headerArea {
-  margin: 0; /* 横幅をautoにすることでコンテンツが中央寄りに設定 */
-  width: 980px; /* ヘッダーコンテンツ部分の横幅を設定 */
+  width: 100%; /* ヘッダーコンテンツ部分の横幅を設定 */
 }
 
 /* ヘッダーロゴ */
 div#header_logo {
   float: left; /* ロゴ表示部分を左寄せで設定 */
-  font-style: Impact;
+  font-family: monospace;
   padding: 17px 20px 20px 20px;
   font-weight: bold;
   font-size: 24px;
@@ -30,7 +29,7 @@ div#header_logo {
 /* グローバルナビゲーション */
 nav#gnavi {
   float: right; /* グローバルナビゲーション部分を右寄せで設定 */
-  margin: 12px 0 0 0; /* 上部に12ピクセルの余白を設定 */
+  margin: 12px 50px 0 0; /* 上部に12ピクセルの余白を設定 */
   text-align: right; /* コンテンツの中身を右寄せで設定 */
 }
 
@@ -41,45 +40,99 @@ nav#gnavi ul{
 
 nav#gnavi li {
   float: right; /* リストを左寄せで横並びになるよう設定 */
-  padding: 0 ; /* 左に20ピクセルの余白を設定 */
+  padding: 0 0 0 50px ; /* 左に20ピクセルの余白を設定 */
   font-size: 12px;
+  color: black;
 
 }
 
 /* リンク */
 a:link {
-  color: black; /* リンクテキストを青色に設定 */
+  color: #000000; /* リンクテキストを青色に設定 */
   text-decoration: none; /* テキストに下線が表示されないように設定 */
 }
 
 a:hover {  /* hoverはマウスを乗せたときの設定 */
-  color: #006DD9; /* リンクテキストを赤色に設定 */
+  color: #CC9933; /* リンクテキストを赤色に設定 */
   text-decoration: none; /* テキストに下線が表示されないように設定 */
 }
 
  h1{
-   padding: 90px 0 0 50px;
-   font-size: 24px;
-   font-weight: bold; /* 太字 */
-   color: black;
- }
- h2{
+   float: right;
+   padding: 120px 0 0 50px;
    font-size: 22px;
    font-weight: bold; /* 太字 */
-   padding: 0 0 0 80px;
-   color: black;
+   color: white;
+ }
+
+ .small{
+   margin:50px 0 0 65px;
+   font-size: 20px;
+   font-weight: bold; /* 太字 */
+
  }
 
 
  /* メインパネル */
  div#main_panel {
-   padding: 50px 0 0 0; /* メインパネル上部に46ピクセルの余白を設定 */
-   height: 400px; /* メインパネルの高さを400pxに設定 */
-   background-image: url('../images/Daily-Exercise01.jpg');
+   margin: auto;
+   height: 280px;
+   background-image: url(fitness-image02.jpg);
+   width: 100%;
+   background-repeat: no-repeat;
+   zoom:150%;
+   padding: 70px 70px 0 0; /* メインパネル上部に46ピクセルの余白を設定 */
+   background-size: auto;
+
+
+ }
+
+
+
+ .squea{
+   width: 200px;
+   height: 100px;
+   color: #F8F8F8;
+
  }
 
  div#main_panelArea {
-   margin: 0 0 0 60px; /* 横幅をautoにすることでコンテンツが中央寄りになります */
-   padding: 90px 0 0 0; /* メインパネルコンテンツ上部に90ピクセルの余白を設定 */
-   width: 980px; /* 横幅を980ピクセルで設定 */
+   width: 100%; /* 横幅を980ピクセルで設定 */
+
  }
+
+ div.contents_A{
+   width: 100%;
+   float: left;
+   padding: 100px 100px 0 100px;
+   background: #F7F7F7;
+   height:auto;
+
+
+ }
+
+
+ /* コンテンツエリア */
+ div.content {
+   padding: 120px 0; /* コンテンツエリアの上下に60ピクセルの余白を設定 */
+   width: 100%; /* 横幅を画面一杯に設定 */
+   border-bottom: solid 1px #EEE; /* コンテンツエリア下に1ピクセルの実線を設定 */
+
+ }
+ div.contentArea {
+   float: right;
+   margin: 130px 70px 0 0; /* 横幅をautoにすることでコンテンツが中央寄りに設定 */
+   width: 980px; /* 横幅設定 */
+
+ }
+
+ div.contentArea .main {
+   float:right; /* 右寄せ設定 */
+   width: 520px; /* 横幅設定 */
+ }
+
+
+ div.contentArea .side {
+  float:left; /* 左寄せ設定 */
+  width: 460px; /* 横幅設定 */
+}
