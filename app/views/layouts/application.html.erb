@@ -8,7 +8,41 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+    <!-- ヘッダーここから -->
+   <div id="header">
+   <div id="headerArea">
+
+     <div id="header_logo">WEB FITNESS</div>
+
+
+     <!-- グローバルナビゲーションここから -->
+     <nav id="gnavi">
+       <ul>
+         <li><a href="#">トップ</a></li>
+         <li><a href="#">アカウント作成</a></li>
+       </ul>
+     </nav>
+     <!-- グローバルナビゲーションここまで -->
+
+   </div>
+   </div>
+   <!-- ヘッダーここまで -->
   <body>
     <%= yield %>
   </body>
+  <!-- フッターここから -->
+
+    <div id="footer">
+    <div id="footerArea">
+
+
+      <nav id="gnavi">
+        <ul>
+          <li><a href="#">トップ</a></li>
+          <li><a href="#">アカウント作成</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- フッターここまで -->
 </html>
