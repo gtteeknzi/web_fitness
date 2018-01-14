@@ -4,6 +4,8 @@
 /* グローバルナビゲーション */
 @charset "utf-8";
 
+
+
 /* ヘッダー */
 div#header {
   position: fixed; /* 画面をスクロールしてもヘッダーを常に上部固定 */
@@ -135,4 +137,4 @@ a:hover {  /* hoverはマウスを乗せたときの設定 */
  div.contentArea .side {
   float:left; /* 左寄せ設定 */
   width: 460px; /* 横幅設定 */
-}
+ }
