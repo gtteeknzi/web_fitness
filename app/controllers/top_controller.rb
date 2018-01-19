@@ -8,4 +8,10 @@ class TopController < ApplicationController
   def signup
   end
 
+  def link
+  end
+
+  def signin
+  end
+
 end

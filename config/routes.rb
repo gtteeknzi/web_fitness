@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users, only: [:show]
   root 'top#top'
-  match '/signup',    to: 'top#signup',    via: 'get'
-  match '/log in',   to: 'top#log in',   via: 'get'
-  match '/link', to: 'top#lonk', via: 'get'
+  match '/users/signup',    to: 'top#users/signup',   via: 'get'
+  match '/signin',    to: 'top#signin',   via: 'get'
+  match '/link',      to: 'top#link',     via: 'get'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
