@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users, only: [:show]
   root 'top#top'
-  match '/users/signup',    to: 'top#users/signup',   via: 'get'
+  match '/signup',    to: 'users#signup',   via: 'get'
   match '/signin',    to: 'top#signin',   via: 'get'
   match '/link',      to: 'top#link',     via: 'get'
 
