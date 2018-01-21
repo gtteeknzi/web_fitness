@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user=User.new(name: params[:name], email: params[:email], password:params[:password])
+    @user=User.new(name: params[:name], email: params[:email], password: params[:password])
     if @user.save
       redirect_to("/users/#{@user.id}/index")
     else
@@ -18,7 +18,11 @@ class UsersController < ApplicationController
   end
 
   def signin
-    @user=User.find_by(email: params[:email], password: params[:password])
+    @user = User.find_by(email: params[:email] )#,password: params[:password]
+    p "========================================="
+    p @user
+    p "========================================="
+
    if @user
      redirect_to("/users/#{@user.id}/index")
    else
