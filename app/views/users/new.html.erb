@@ -1,0 +1,21 @@
+
+<div class="row">
+  <aside class="col-md-4">
+    <section>
+      <h1>
+        hello
+      </h1>
+      <h2>signup</h2>
+
+      <%= form_tag("/users/create") do %>
+
+      <p>Name<input type="text" name="name" ></p>
+      <p>E-mail<input type="text" name="email" ></p>
+      <p>password<input type="text" name="password" ></p>
+      <input type="submit"  value="登録">
+      
+
+      <%end%>
+    </section>
+  </aside>
+</div>

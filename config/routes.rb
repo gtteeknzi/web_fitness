@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
-  get 'users/signin'
-  get 'users/signup'
+  get  'users/signin' =>'users#signin_form'
+  post 'users/signin' =>'users#signin'
+  post 'users/create' =>'users#create'
+  get 'users/signup' =>'users#new'
+  get 'users/:id/index'=>'users#index'
+
 
 
   devise_for :users
-  resources :users, only: [:show]
   root 'top#top'
   match 'users/signup',    to: 'users#signup',   via: 'get'
-  match 'users/signin',    to: 'users#signin',   via: 'get'
-  match '/link',      to: 'top#link',     via: 'get'
+  #match 'users/signin_form',    to: 'users#signin',   via: 'get'
+  match '/link',           to: 'top#link',       via: 'get'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
