@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  get 'users/show'
+  get 'users/signin'
+  get 'users/signup'
+
 
   devise_for :users
   resources :users, only: [:show]
   root 'top#top'
-  match '/signup',    to: 'users#signup',   via: 'get'
-  match '/signin',    to: 'top#signin',   via: 'get'
+  match 'users/signup',    to: 'users#signup',   via: 'get'
+  match 'users/signin',    to: 'users#signin',   via: 'get'
   match '/link',      to: 'top#link',     via: 'get'
 
 
