@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'users/:id/index'=>'users#index'
 
 
-  devise_for :users
+  #devise_for :users
   root 'top#top'
   match 'users/signup',    to: 'users#signup',   via: 'get'
   #match 'users/signin_form',    to: 'users#signin',   via: 'get'
