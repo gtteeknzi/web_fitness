@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   # get  '/signin' =>'users#signin_form'
   # get '/signin' =>'users#signin'
 
-  get '/signup' =>'users#new'
-  post 'users/create' =>'users#create'
+  get 'users/signup' =>'users#new'
+  post 'users/signup' =>'users#create'
 
   get 'users/:id/index'=>'users#index'
 
