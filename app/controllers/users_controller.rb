@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user=User.new(name: params[:name], email: params[:email], password:params[:password])
+    @user=User.new(user_params)
     if @user.save
       redirect_to("/users/#{@user.id}/index")
     else
@@ -15,6 +15,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.new
   end
 
   def signin
@@ -26,7 +27,11 @@ class UsersController < ApplicationController
    end
 
   end
+  private
 
+    def user_params
+      params.require(:user).permit(:name, :email, :password)
+    end
 
 
 

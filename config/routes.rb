@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+
   get  'users/signin' =>'users#signin_form'
-  post 'users/signin' =>'users#signin'
+  get 'users/signin' =>'users#signin'
   post 'users/create' =>'users#create'
+
   get 'users/signup' =>'users#new'
   get 'users/:id/index'=>'users#index'
-
 
 
   devise_for :users

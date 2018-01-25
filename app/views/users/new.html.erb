@@ -7,13 +7,12 @@
       </h1>
       <h2>signup</h2>
 
-      <%= form_tag("/users/create") do %>
+      <%= form_for @user, url: users_create_path do |f| %>
 
-      <p>Name<input type="text" name="name" ></p>
-      <p>E-mail<input type="text" name="email" ></p>
-      <p>password<input type="text" name="password" ></p>
-      <input type="submit"  value="登録">
-      
+      <p>Name<%= f.text_field :name %></p>
+      <p>email<%= f.text_field :email %></p>
+      <p>password<%= f.text_field :password %></p>
+      <%= f.submit :submit %>
 
       <%end%>
     </section>
