@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
 
+  def new
+    @user = User.new
+  end
 
   def index
     @users=User.find_by(id: params[:id])
@@ -12,10 +15,6 @@ class UsersController < ApplicationController
     else
       render("/users/signup")
     end
-  end
-
-  def new
-    @user = User.new
   end
 
   def signin
