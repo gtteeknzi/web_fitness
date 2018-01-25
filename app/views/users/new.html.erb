@@ -1,20 +1,21 @@
+<h1>Sign up</h1>
 
 <div class="row">
-  <aside class="col-md-4">
-    <section>
-      <h1>
-        hello
-      </h1>
-      <h2>signup</h2>
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @user, url: users_signup_path do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
 
-      <%= form_for @user, url: users_create_path do |f| %>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
 
-      <p>Name<%= f.text_field :name %></p>
-      <p>email<%= f.text_field :email %></p>
-      <p>password<%= f.text_field :password %></p>
-      <%= f.submit :submit %>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
 
-      <%end%>
-    </section>
-  </aside>
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 </div>

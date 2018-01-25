@@ -7,44 +7,13 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-    <!-- ヘッダーここから -->
-   <div id="header">
-   <div id="headerArea">
 
-     <div id="header_logo">WEB FITNESS</div>
+  <%= render 'shared/header' %>
 
-
-     <!-- グローバルナビゲーションここから -->
-     <nav id="gnavi">
-       <ul>
-        <li><%= link_to "トップ",    '#' %></li>
-        <li><%= link_to "アカウント作成",    signup_path %></li>
-        <li><%= link_to "ログイン", signin_path %></li>
-        <li><%= link_to "リンク", '/link' %></li>
-       </ul>
-     </nav>
-     <!-- グローバルナビゲーションここまで -->
-
-   </div>
-   </div>
-   <!-- ヘッダーここまで -->
   <body>
     <%= yield %>
   </body>
-  <!-- フッターここから -->
 
-    <div id="footer">
-    <div id="footerArea">
-
-
-      <nav id="gnavi">
-        <ul>
-          <li><a href="#">トップ</a></li>
-          <li><a href="#">アカウント作成</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <!-- フッターここまで -->
-
+  <%= render 'shared/footer' %>
+  <%= debug(params) if Rails.env.development? %>
 </html>
