@@ -11,9 +11,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      flash[:success] = "Welcome to the Web Fitness!"
       redirect_to("/users/#{@user.id}/index")
     else
-      render("/users/signup")
+      render("/users/new")
     end
   end
 
@@ -29,7 +30,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:name, :email, :password)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
 
 
