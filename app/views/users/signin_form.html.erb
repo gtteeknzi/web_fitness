@@ -2,16 +2,48 @@
 <div class="row">
   <aside class="col-md-4">
     <section>
-      <h1>
-        hello
-      </h1>
-      <h2>signin</h2>
+      
 
       <%= form_tag("/users/signin") do %>
 
       <p>E-mail<input type="text" name="email" ></p>
       <p>password<input type="text" name="password" ></p>
       <input type="submit"  value="ログイン">
+
+
+      <%end%>
+    </section>
+  </aside>
+</div>
+
+<div class="row">
+  <aside class="col-md-4">
+    <section>
+
+      <h1>ログイン</h1>
+
+
+      <%= form_tag("/users/signin") do %>
+
+      <div class="prompt email">
+        <div class="field" date-fieldname="email">
+          <div class="sidetip">
+            <p class="domain">もしかして <em><a role="button" class="js-email-correction" href="#"></a></em>ですか?</p>
+            <p>メールアドレス<br><input type="text" name="email" ></p>
+          </div>
+        </div>
+      </div>
+      <div class="prompt password">
+        <div class="field" data-fieldname="password">
+           <div class="sidetip">
+              <p>パスワード<br><input type="text" name="password" ></p>
+           </div>
+        </div>
+        <div class="score" style="display: block;"><span><b class="fill" style="width: 0px;"></b></span></div>
+      </div>
+      <div class="signup_button">
+        <input type="submit"  value="ログイン">
+      </div>
 
 
       <%end%>

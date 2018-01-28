@@ -29,3 +29,40 @@
     <% end %>
   </div>
 </div>
+
+<div class="row">
+  <aside class="col-md-4">
+    <section>
+
+      <h1>新規登録</h1>
+
+
+      <%= form_tag("/users/create") do %>
+
+  <div class="prompt name">
+    <div class="field" data-fieldname="name">
+      <div class="sidetip">
+        <p>名前（またはニックネーム）<br><input type="text" name="name" ></p>
+      </div>
+    </div>
+  </div>
+  <div class="prompt email">
+    <div class="field" date-fieldname="email">
+      <div class="sidetip">
+        <p class="domain">もしかして <em><a role="button" class="js-email-correction" href="#"></a></em>ですか?</p>
+        <p>メールアドレス<br><input type="text" name="email" ></p>
+      </div>
+    </div>
+  </div>
+  <div class="prompt password">
+    <div class="field" data-fieldname="password">
+       <div class="sidetip">
+          <p>パスワード<br><input type="text" name="password" ></p>
+       </div>
+    </div>
+    <div class="score" style="display: block;"><span><b class="fill" style="width: 0px;"></b></span></div>
+  </div>
+  <div class="signup_button">
+    <input type="submit"  value="登録">
+  </div>
+</div>

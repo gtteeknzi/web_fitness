@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* ヘッダー */
+div#header {
+  position: fixed; /* 画面をスクロールしてもヘッダーを常に上部固定 */
+  width: 100%; /* 横幅を画面一杯に設定 */
+  height: 50px; /* ヘッダーの高さを設定 */
+  background: #F8F8F8; /* 背景色の設定 */
+  border-bottom: solid 1px #EEE; /* ヘッダーの下に1ピクセルの実線を設定 */
+}
+
+div#headerArea {
+  margin: 0 auto; /* 横幅をautoにすることでコンテンツが中央寄りに設定 */
+  width: 980px; /* ヘッダーコンテンツ部分の横幅を設定 */
+}
+
+/* ヘッダーロゴ */
+div#header_logo {
+  float: left; /* ロゴ表示部分を左寄せで設定 */
+  padding: 20px 0 0 30px; /* ロゴ表示部分の上に余白12ピクセルを設定 */
+  font-weight: bold; /* ロゴのテキストを太字に設定 */
+  color: #777777; /* ロゴの色を設定 */
+
+}
+
+  div#gnavi {
+   float: right; /* グローバルナビゲーション部分を右寄せで設定 */
+   margin: 12px 0 0 0; /* 上部に12ピクセルの余白を設定 */
+   text-align: right; /* コンテンツの中身を右寄せで設定 */
+ }
+
+  div#gnavi ul{
+   clear: both; /* 回り込みを解除する際に使用しdiv要素が重ならないように設定 */
+ }
+
+  div#gnavi li {
+   padding: 0 0 0 20px; /* 左に20ピクセルの余白を設定 */
+   float: left; /* リストを左寄せで横並びになるよう設定 */
+ }
+
+ /* リンク */
+li:link {
+  color: #006DD9; /* リンクテキストを青色に設定 */
+  text-decoration: none; /* テキストに下線が表示されないように設定 */
+}
+
+li:hover {  /* hoverはマウスを乗せたときの設定 */
+  color: #cd4730; /* リンクテキストを赤色に設定 */
+  text-decoration: underline; /* テキストに下線が表示されないように設定 */
+}
+
+
+
+#facebook ._-kb div {
+    font-family: inherit;
+}
+mPCZEzMLgdY.css:47
+._2t-8._2t-8 {
+    font-family: Helvetica, Arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
+}
+Inherited from div#blueBarDOMInspector._21dp
+BKZ0BIPExih.css:28
+#facebook ._-kb div {
+    font-family: inherit;
+}
+Inherited from div#pagelet_bluebar
+BKZ0BIPExih.css:28
+#facebook ._-kb div {
+    font-family: inherit;
+}
+Inherited from div#u_0_j._li
+BKZ0BIPExih.css:28
+#facebook ._-kb div {
+    font-family: inherit;
+}
+Inherited from body.hasLeftCol._2yq.home.composerExpanded._5vb_.fbx._-kb.sf._2ltu._605a._lfs._61s0.b_1cm1748szp.chrome.webkit.mac.x1.Locale_ja_JP.cores-gte4._19_u.hasAXNavMenubar
+BKZ0BIPExih.css:28
+#facebook ._-kb.sf {
+    font-family: SF Optimized, system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
+    letter-spacing: -0.01em;
+}
+BKZ0BIPExih.css:28
+#facebook ._-kb.mac {
+    font-family: Helvetica Neue, Helvetica, Arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+BKZ0BIPExih.css:43
+._5vb_, ._5vb_ #contentCol {
+    background-color: #e9ebee;
+    color: #1d2129;
+}
+mPCZEzMLgdY.css:2
+body, button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
+    font-size: 12px;
+}
+mPCZEzMLgdY.css:2
+body {
+    background: #fff;
+    color: #1d2129;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: embed;
+}
